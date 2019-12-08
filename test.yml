@@ -1,0 +1,6 @@
+---
+   - hosts: host_grp
+     become:  true
+     tasks:
+     - name: install 
+       yum: name=httpd state=present
